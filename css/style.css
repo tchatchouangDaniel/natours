@@ -57,6 +57,8 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    animation: moveInBottom 1.5s ease 0s 1 normal none;
+    animation-fill-mode: backwards;
 }
 
 .heading-primary-sub{
@@ -64,4 +66,17 @@ body {
     font-size : 20px;
     font-weight: 700;
     letter-spacing: 17.4px;
+    animation: moveInBottom 1.5s ease .5s 1 normal none;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0%{
+        transform: translate(0px,60px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
 }
