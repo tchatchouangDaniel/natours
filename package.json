@@ -1,0 +1,13 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Paul Tchatchouang Ouokam <tchatchouang.ouokam@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
