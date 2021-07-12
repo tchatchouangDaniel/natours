@@ -215,11 +215,69 @@ body {
 }
 
 .composition__photo {
-  width: 55%;
+  width: 60%;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   position: absolute;
+  outline: 0rem solid rgba(40, 180, 133, 0.2);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.composition__photo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  outline: 1.2rem solid #28b485;
+  outline-offset: 1rem;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  z-index: 1;
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.feature-box:hover {
+  -webkit-transform: translateY(-1.6rem) scale(1.05);
+          transform: translateY(-1.6rem) scale(1.05);
+}
+
+.feature-box__icon {
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#55c57a));
+  background-image: linear-gradient(to right, #7ed56f, #55c57a);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 4.6rem;
 }
 
 .header {
@@ -313,5 +371,20 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
+}
+
+.section-features {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url("../img/nat-4.jpg");
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-size: cover;
+  padding: 20rem 0;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  margin-top: -10rem;
+}
+
+.section-features > * {
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
 }
 /*# sourceMappingURL=main.css.map */
