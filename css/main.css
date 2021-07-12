@@ -169,6 +169,15 @@ body {
   background-color: #ffffff;
 }
 
+.btn--green {
+  background-color: #55c57a;
+  color: #ffffff;
+}
+
+.btn--green::after {
+  background-color: #55c57a;
+}
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -386,5 +395,11 @@ body {
 .section-features > * {
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -10rem;
 }
 /*# sourceMappingURL=main.css.map */
