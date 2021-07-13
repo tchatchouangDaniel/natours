@@ -3,6 +3,15 @@
 }
 .u-margin-bottom-8 {
   margin-bottom: 8rem;
+  @include respond(tab_port) {
+    margin-bottom: 5rem;
+  }
+}
+
+.u-transX-2 {
+  @include respond(tab_land) {
+    transform: translateX(2rem);
+  }
 }
 
 .u-margin-bottom-1 {

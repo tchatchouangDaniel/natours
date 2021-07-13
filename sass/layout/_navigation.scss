@@ -19,6 +19,10 @@
     border-radius: 50%;
     transform-origin: center;
     transition: all 1s ease;
+    @include respond(tab_port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__checkbox:checked ~ &__background {
@@ -40,6 +44,11 @@
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 1rem 2rem rgba($color-dark, 0.4);
+
+    @include respond(tab_port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__nav {

@@ -8,6 +8,12 @@
     outline: none;
     background: rgba($color-white, 0.5);
     z-index: 2;
+    @include respond(tab_port) {
+      width: 100%;
+      transform: skewX(0deg);
+      background: rgba($color-white, 0.7);
+    }
+
     &:not(:last-child) {
       margin-bottom: 2rem;
     }

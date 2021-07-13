@@ -1,5 +1,8 @@
 .composition {
   position: relative;
+  @include respond(tab_port) {
+    margin-top: 2rem;
+  }
   &__photo {
     width: 60%;
     box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.4);
@@ -21,6 +24,58 @@
     &--p3 {
       left: 20%;
       top: 10rem;
+    }
+    @include respond(tab_land) {
+      width: 40%;
+      &--p1 {
+        left: 10%;
+        top: -2rem;
+      }
+
+      &--p2 {
+        right: 15%;
+        top: 2rem;
+      }
+
+      &--p3 {
+        left: 20%;
+        top: 10rem;
+      }
+    }
+
+    @include respond(tab_port) {
+      width: 45%;
+      &--p1 {
+        left: -2rem;
+        top: -2rem;
+      }
+      &--p2 {
+        left: 30%;
+        top: -3rem;
+        z-index: 3;
+      }
+
+      &--p3 {
+        left: 63%;
+        top: -2rem;
+      }
+    }
+
+    @include respond(phone) {
+      &--p1 {
+        left: 0rem;
+        top: -2rem;
+      }
+      &--p2 {
+        left: 30%;
+        top: -3rem;
+        z-index: 3;
+      }
+
+      &--p3 {
+        left: 60%;
+        top: -2rem;
+      }
     }
 
     &:hover {

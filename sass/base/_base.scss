@@ -33,4 +33,8 @@ body {
   padding: 3rem;
   scroll-behavior: smooth;
   box-sizing: border-box;
+
+  @include respond(tab_land) {
+    padding: 0;
+  }
 }

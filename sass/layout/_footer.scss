@@ -1,6 +1,17 @@
 .footer {
   padding: 8rem 0;
   background-color: $color-dark-2;
+
+  @include respond(tab_port) {
+    padding: 7rem 0;
+  }
+
+  &__navigaton {
+    @include respond(tab_port) {
+      text-align: center;
+    }
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
@@ -10,6 +21,13 @@
     width: 10rem;
   }
   &__list {
+    @include respond(tab_port) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    border-bottom: 1px solid $color-grey;
     list-style: none;
   }
 
@@ -34,6 +52,11 @@
       transform: scale(1.1) rotate(-15deg);
       background-color: $color-dark-3;
       padding: 1rem;
+    }
+  }
+  &__copyright {
+    @include respond(tab_port) {
+      text-align: center;
     }
   }
 }
