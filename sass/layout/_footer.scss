@@ -1,0 +1,42 @@
+.footer {
+  padding: 8rem 0;
+  background-color: $color-dark-2;
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  &__logo {
+    display: inline-block;
+    width: 10rem;
+  }
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    text-align: center;
+    &:not(:last-child) {
+      & > * {
+        padding: 1rem;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-white;
+    padding: 1rem;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    &:hover {
+      transform: scale(1.1) rotate(-15deg);
+      background-color: $color-dark-3;
+      padding: 1rem;
+    }
+  }
+
+  &__copyright {
+  }
+}
