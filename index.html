@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
-
+    <script defer src="js/app.js"></script>
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
@@ -16,6 +16,38 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input class="navigation__checkbox" type="checkbox" name="nav" id="nav" />
+      <label class="navigation__button" for="nav">
+        <span class="navigation__stick"></span>
+        <span class="navigation__stick"></span>
+        <span class="navigation__stick"></span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link" for="nav">01 Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">02 About Us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">03 Features</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">04 Popular Tour</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">05 Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">06 Book Tour</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="logo" class="header__logo" />
